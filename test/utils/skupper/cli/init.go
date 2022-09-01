@@ -64,7 +64,7 @@ func (s *InitTester) Command(cluster *base.ClusterContext) []string {
 		args = append(args, "--console-ingress", s.ConsoleIngress)
 	}
 	if s.RouterDebugMode == "" {
-		s.RouterDebugMode = "gdb"
+		s.RouterDebugMode = ""
 	}
 	args = append(args, "--router-debug-mode", s.RouterDebugMode)
 	if s.RouterLogging == "" {
