@@ -109,11 +109,11 @@ func TestHelloWorldCLI(t *testing.T) {
 				{Ctx: prv, Commands: []cli.SkupperCommandTester{
 					// skupper init - edge mode, no console and unsecured
 					&cli.InitTester{
-						ConsoleAuth:           "unsecured",
-						ConsoleUser:           "admin",
-						ConsolePassword:       "admin",
-						Ingress:               "none",
-						RouterDebugMode:       "gdb",
+						ConsoleAuth:     "unsecured",
+						ConsoleUser:     "admin",
+						ConsolePassword: "admin",
+						Ingress:         "none",
+						//RouterDebugMode:       "gdb",
 						RouterLogging:         "trace",
 						RouterMode:            "edge",
 						SiteName:              "private",
