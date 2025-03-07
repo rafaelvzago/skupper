@@ -24,6 +24,8 @@ spec:
                   type: string
                 tlsCredentials:
                   type: string
+                useClientCert:
+                  type: boolean
                 type:
                   type: string
                 includeNotReadyPods:
@@ -40,6 +42,8 @@ spec:
               type: object
               properties:
                 status:
+                  type: string
+                message:
                   type: string
                 conditions:
                   type: array
@@ -69,7 +73,7 @@ spec:
                         type: string
                       type:
                         maxLength: 316
-                        pattern: ^([a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*/)?(([A-Za-z0-9][- A-Za-z0-9_.]*)?[A-Za-z0-9])$
+                        pattern: ^([a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*/)?(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])$
                         type: string
                     required:
                     - lastTransitionTime
