@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: backend
-          image: quay.io/skupper/hello-world-backend
+          image: quay.io/rhn-support-rjauhari/hello-world-backend:latest
           ports:
             - containerPort: 8080

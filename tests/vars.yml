@@ -1,7 +1,8 @@
 ---
 # kubeconfig_1: /home/user/.kube/config
 # kubeconfig_2: /home/user/.kube/config
-kubeconfig: "/home/{{ ansible_user }}/.kube/config"
+
+kubeconfig: "/home/{{ ansible_user }}/.kube/ocp-latest.middleware-s390x"
 debug: false
 teardown_flag: true
 
@@ -56,7 +57,7 @@ teardown_flag: true
 # run_curl_address: "http://example.com"
 
 # Container image to use for curl operation
-# run_curl_image: "{{ skupper_test_images_curl }}"
+run_curl_image: "quay.io/rhn-support-rjauhari/lanyard:latest"
 
 # Number of retry attempts for curl operation
 # run_curl_retries: 10
